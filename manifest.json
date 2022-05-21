@@ -1,0 +1,22 @@
+{
+  "name": "WaniKani Review Notifications",
+  "description": "Let the user know that a review is available to be done",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+	  "default_popup": "popup.html"
+  },
+  "host_permissions": [
+	"https://api.wanikani.com"
+  ],
+  "background": {
+	  "service_worker": "background.js"
+  },
+  "permissions": ["storage", "background", "notifications", "alarms"],  
+  "icons": {
+	  "16": "/wani16.png",
+	  "32": "/wani32.png",
+	  "48": "/wani48.png",
+	  "128": "/wani128.png"
+  }
+}
